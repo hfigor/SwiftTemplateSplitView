@@ -15,6 +15,7 @@
 		3CDAF89F2027B2F9000F4D47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CDAF89D2027B2F9000F4D47 /* LaunchScreen.storyboard */; };
 		3CDAF8AA2027B2FA000F4D47 /* SwiftTemplateSplitViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDAF8A92027B2FA000F4D47 /* SwiftTemplateSplitViewTests.swift */; };
 		3CDAF8B52027B2FA000F4D47 /* SwiftTemplateSplitViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDAF8B42027B2FA000F4D47 /* SwiftTemplateSplitViewUITests.swift */; };
+		3CDAF8C32027B3DF000F4D47 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3CDAF8C22027B3DF000F4D47 /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3CDAF8B02027B2FA000F4D47 /* SwiftTemplateSplitViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTemplateSplitViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CDAF8B42027B2FA000F4D47 /* SwiftTemplateSplitViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTemplateSplitViewUITests.swift; sourceTree = "<group>"; };
 		3CDAF8B62027B2FA000F4D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CDAF8C22027B3DF000F4D47 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		3CDAF8912027B2F9000F4D47 /* SwiftTemplateSplitView */ = {
 			isa = PBXGroup;
 			children = (
+				3CDAF8C22027B3DF000F4D47 /* README.txt */,
 				3CDAF8922027B2F9000F4D47 /* AppDelegate.swift */,
 				3CDAF8942027B2F9000F4D47 /* MasterViewController.swift */,
 				3CDAF8962027B2F9000F4D47 /* DetailViewController.swift */,
@@ -237,6 +240,7 @@
 			files = (
 				3CDAF89F2027B2F9000F4D47 /* LaunchScreen.storyboard in Resources */,
 				3CDAF89C2027B2F9000F4D47 /* Assets.xcassets in Resources */,
+				3CDAF8C32027B3DF000F4D47 /* README.txt in Resources */,
 				3CDAF89A2027B2F9000F4D47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
