@@ -8,12 +8,16 @@
 
 import UIKit
 
-protocol Menu_TVC_Delegate {
+protocol Menu_TVC_Delegate { // pg 350
     func didSelectMenuItem(order:String)
 }
 
 class Menu_TVC: UITableViewController {
-
+    
+    // MARK: Delegates
+    
+    var delegate : Menu_TVC_Delegate! = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,13 +34,11 @@ class Menu_TVC: UITableViewController {
         let cell = tableView.cellForRow(at: indexPath)
         let myOrder = (cell?.textLabel?.text)!
         navigationItem.title = myOrder
+        delegate.didSelectMenuItem(order: myOrder) // pass myOrder to to delegate in the OrderMaster pg 350
     }
     
    
-    // MARK: Delegates
-    
-    var delegate : Menu_TVC_Delegate! = nil
-    
+  
     
     // MARK: Manage Resources
     

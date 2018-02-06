@@ -8,20 +8,29 @@
 
 import UIKit
 
-class OrderMaster_TVC: UITableViewController {
+class OrderMaster_TVC: UITableViewController, Menu_TVC_Delegate { // This is a dynamic table and requires data source methods
 
-    // MARK: Atributes
+    // MARK: Properties
     
-    var orderList: [String] = ["a","b","c","d"]
+    var detailViewController: Menu_TVC? = nil
+    
+    var orderList: [String] = [] // used at first for testing ["a","b","c","d"]
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let split = self.splitViewController { // see pg 352 for splitViewController array description
+            let controlllers = split.viewControllers
+            let dNavController = controlllers[controlllers.count - 1] as! UINavigationController
+            detailViewController = dNavController.topViewController as? Menu_TVC
+        }
+        detailViewController?.delegate = self
   
     }
 
-    // MARK: TableView Data Source and Delegate
+    // MARK: TableView Data Source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -41,6 +50,13 @@ class OrderMaster_TVC: UITableViewController {
             cell.backgroundColor = tableView.backgroundColor
         }
         return cell
+    }
+    
+    // MARK: Delegate Functions
+    
+    func didSelectMenuItem(order: String) {  // This delegate is run from the Menu_TVC row selection
+        orderList.append(order)
+        tableView.reloadData()
     }
     
     // MARK: Manage Resources
