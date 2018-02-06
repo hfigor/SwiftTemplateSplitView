@@ -16,6 +16,8 @@
 		3CDAF8AA2027B2FA000F4D47 /* SwiftTemplateSplitViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDAF8A92027B2FA000F4D47 /* SwiftTemplateSplitViewTests.swift */; };
 		3CDAF8B52027B2FA000F4D47 /* SwiftTemplateSplitViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDAF8B42027B2FA000F4D47 /* SwiftTemplateSplitViewUITests.swift */; };
 		3CDAF8C32027B3DF000F4D47 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3CDAF8C22027B3DF000F4D47 /* README.txt */; };
+		3CDAF8C52028C3B8000F4D47 /* Menu_TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDAF8C42028C3B8000F4D47 /* Menu_TVC.swift */; };
+		3CDAF8C920293A51000F4D47 /* OrderMaster_TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDAF8C820293A51000F4D47 /* OrderMaster_TVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3CDAF8B42027B2FA000F4D47 /* SwiftTemplateSplitViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTemplateSplitViewUITests.swift; sourceTree = "<group>"; };
 		3CDAF8B62027B2FA000F4D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CDAF8C22027B3DF000F4D47 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		3CDAF8C42028C3B8000F4D47 /* Menu_TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_TVC.swift; sourceTree = "<group>"; };
+		3CDAF8C820293A51000F4D47 /* OrderMaster_TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMaster_TVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				3CDAF89B2027B2F9000F4D47 /* Assets.xcassets */,
 				3CDAF89D2027B2F9000F4D47 /* LaunchScreen.storyboard */,
 				3CDAF8A02027B2F9000F4D47 /* Info.plist */,
+				3CDAF8C42028C3B8000F4D47 /* Menu_TVC.swift */,
+				3CDAF8C820293A51000F4D47 /* OrderMaster_TVC.swift */,
 			);
 			path = SwiftTemplateSplitView;
 			sourceTree = "<group>";
@@ -267,7 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CDAF8972027B2F9000F4D47 /* DetailViewController.swift in Sources */,
+				3CDAF8C920293A51000F4D47 /* OrderMaster_TVC.swift in Sources */,
 				3CDAF8952027B2F9000F4D47 /* MasterViewController.swift in Sources */,
+				3CDAF8C52028C3B8000F4D47 /* Menu_TVC.swift in Sources */,
 				3CDAF8932027B2F9000F4D47 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
